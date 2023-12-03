@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forcasting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <style>
+      .card {
+        background: linear-gradient(135deg, #00feba, #5b548a);
+      }
+    </style>
+  </head>
+  <body class="bg-[#222] text-[#fff]">
+    <div class="h-[100vh] w-full m-0 p-0 box-border mt-[5rem]">
+      <div
+        class="card rounded-2xl h-[35rem] w-[30rem] m-auto p-3 flex flex-col justify-center items-center"
+      >
+        <form class="flex gap-4">
+          <input
+            type="text"
+            class="bg-[#ebfffc] p-2 rounded-3xl text-black"
+            placeholder="enter the city..."
+          />
+          <button class="bg-[#ebfffc] p-2 rounded-full px-3 text-black">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <div class="text-center text-[3rem] font-bold">
+          <img src="" class="h-[8rem] weather_img" />
+          <h2 class="temp"></h2>
+          <h2 class="text-[1.7rem] city"></h2>
+        </div>
+        <div class="flex justify-center gap-[3rem] items-center">
+          <div class="flex gap-4">
+            <img src="/images/humidity.png" class="h-[3.5rem] humidity_img" />
+            <h2 class="flex flex-col gap-2">
+              <span class="humidity"></span><span>Humidity</span>
+            </h2>
+          </div>
+          <div class="flex gap-4">
+            <img src="/images/wind.png" class="wind_img" />
+            <h2 class="flex flex-col gap-2">
+              <span class="wind_speed"></span><span>Wind Speed</span>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
